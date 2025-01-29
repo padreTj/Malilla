@@ -25,8 +25,8 @@ ZONA_EQUIPO = (100, 100, 100)
 fuente = pygame.font.Font(None, 24)
 
 # Tamaño de las cartas
-CARTA_ANCHO = 60
-CARTA_ALTO = 100
+CARTA_ANCHO = 70
+CARTA_ALTO = 120
 
 # Estados del juego
 class EstadoJuego:
@@ -68,7 +68,7 @@ def repartir_cartas():
     }
 
 def obtener_posicion_carta(jugador, i, num_cartas):
-    solapamiento = 30  # Ajusta este valor para controlar el solapamiento (mitad del ancho de carta)
+    solapamiento = 40  # Ajusta este valor para controlar el solapamiento (mitad del ancho de carta)
     
     if jugador == "Jugador 1 (Equipo A)":  # Arriba
         total_width = CARTA_ANCHO + (num_cartas-1)*solapamiento
